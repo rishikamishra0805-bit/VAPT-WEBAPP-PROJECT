@@ -132,7 +132,7 @@ Attackers may execute malicious scripts in a victim's browser.
 Stored XSS occurs when malicious input is stored permanently by the application and executed when users access the page.
 
 ## Payload
-�
+
 alert('Stored XSS')
 
 ## Result
