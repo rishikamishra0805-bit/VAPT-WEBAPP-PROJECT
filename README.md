@@ -110,7 +110,6 @@ An attacker may access unauthorized database information.
 Reflected Cross-Site Scripting occurs when user input is immediately reflected in the web page without proper sanitization.
 
 ## Payload
-�
 alert('XSS')
 
 ## Result
